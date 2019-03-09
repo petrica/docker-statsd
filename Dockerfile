@@ -10,7 +10,7 @@ RUN apt-get update \
 	&& apt-get -y install zabbix-sender \
 	&& git clone --depth=1 https://github.com/etsy/statsd.git \
 	&& cd /statsd \
-	&& npm install https://github.com/bernd/statsd-influxdb-backend/tarball/master \
+	&& npm install https://github.com/sioomy/statsd-influxdb-backend/tarball/master \
 	&& npm install statsd-zabbix-backend \
 	&& apt-get remove -y wget git \
     && apt-get autoremove -y \
