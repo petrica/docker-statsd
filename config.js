@@ -4,7 +4,7 @@
       port: parseInt(process.env.STATSD_PORT) || 8125,
       debug: process.env.STATSD_DEBUG || false,
       percentThresold: [95, 99],
-      flushInterval: 10000,
+      flushInterval: parseInt(process.env.STATSD_FLUSH_INTERVAL) || 10000,
       legacyNamespace: false
     };
 

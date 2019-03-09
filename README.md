@@ -22,6 +22,7 @@ docker run -d -p 8125:8125/udp \
 	-e "STATSD_PORT=8125" \
 	-e "STATSD_ENABLE_CONSOLE=true" \
 	-e "STATSD_DEBUG=true" \
+    -e "STATSD_FLUSH_INTERVAL=10000" \
 	-e "INFLUXDB_VERSION=0.9" \
     -e "INFLUXDB_HOST=127.0.0.1" \
     -e "INFLUXDB_PORT=8086" \
