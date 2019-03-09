@@ -1,6 +1,6 @@
 # Statsd Dockerfile
 
-This repository contains Dockerfile of statsd with influxdb and zabbix backend
+This repository contains Dockerfile of statsd with influxdb and zabbix backend. Support for line protocol.
 
 [![](https://badge.imagelayers.io/jmaitrehenry/statsd:latest.svg)](https://imagelayers.io/?images=jmaitrehenry/statsd:latest 'Get your own badge on imagelayers.io')
 
@@ -23,7 +23,7 @@ docker run -d -p 8125:8125/udp \
 	-e "STATSD_ENABLE_CONSOLE=true" \
 	-e "STATSD_DEBUG=true" \
     -e "STATSD_FLUSH_INTERVAL=10000" \
-	-e "INFLUXDB_VERSION=0.9" \
+	-e "INFLUXDB_VERSION=1.4" \
     -e "INFLUXDB_HOST=127.0.0.1" \
     -e "INFLUXDB_PORT=8086" \
     -e "INFLUXDB_DATABASE=monitoring" \
